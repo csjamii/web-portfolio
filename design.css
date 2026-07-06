@@ -1,0 +1,835 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background-image:url("images/350c050d-5724-4872-8bdf-94b7b7e0698a.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+
+    color:#4b3c3c;
+}
+
+/* ==========================
+HEADER
+========================== */
+
+header{
+
+    position:sticky;
+
+    top:20px;
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:20px auto;
+
+    background:rgba(255,255,255,.8);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:40px;
+
+    padding:18px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-family:'Parisienne',cursive;
+
+    font-size:40px;
+
+    color:#d46892;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#555;
+
+    margin-left:35px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#d46892;
+
+}
+
+/* ==========================
+MAIN CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:45px;
+
+    padding-bottom:80px;
+
+}
+
+/* ==========================
+CARDS
+========================== */
+
+.card{
+
+    background:url("images/118b2af0-b5f9-4750-8b20-965154fca62b.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    border-radius:35px;
+
+    padding:60px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* tape */
+
+.card::before{
+
+    content:"";
+
+    width:100px;
+
+    height:28px;
+
+    background:rgba(255,244,180,.85);
+
+    position:absolute;
+
+    top:20px;
+
+    left:40px;
+
+    transform:rotate(-10deg);
+
+}
+
+/* heart */
+
+.card::after{
+
+    content:"♡";
+
+    position:absolute;
+
+    top:20px;
+
+    right:35px;
+
+    font-size:30px;
+
+    color:#ff8fb7;
+
+}
+
+/* ==========================
+HOME
+========================== */
+
+.hero-card{
+    background-image:url("image/lace.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    border-radius:35px;
+}
+
+
+
+
+.hello{
+
+    font-family:'Parisienne', cursive;
+    font-size:65px;
+    color:#d76d98;
+
+    text-shadow:
+        2px 2px 0 white,
+        0 0 10px rgba(255,192,203,.9);
+
+}
+
+.hero-text h1{
+
+    font-family:'Cormorant Garamond', serif;
+    font-size:72px;
+    font-weight:700;
+    line-height:1;
+
+    color:#4d2d35; /* dark rose brown */
+
+    text-shadow:
+        2px 2px 0 rgba(255,255,255,.7),
+        0 0 8px rgba(255,255,255,.4);
+
+}
+
+.hero-text span{
+
+    font-family:'Parisienne', cursive;
+    font-size:88px;
+
+    background:linear-gradient(
+        180deg,
+        #d48aa8 0%,
+        #f7b2cc 20%,
+        #69052d 45%,
+        #c83f78 70%,
+        #962c5d 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        2px 2px 2px rgba(255,255,255,.6),
+        0 0 10px rgba(200,63,120,.5),
+        0 0 18px rgba(150,44,93,.4);
+
+}
+
+.tagline{
+
+    margin:20px 0;
+
+    background:#f9d3df;
+
+    display:inline-block;
+
+    padding:10px 25px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:14px 35px;
+
+    border-radius:30px;
+
+    background:#d46892;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.button:hover{
+
+    background:#ba4d79;
+
+}
+
+/* ==========================
+PROFILE FRAME
+========================== */
+
+
+.photo-frame::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("images/frame.png") center/contain no-repeat;
+    z-index: 2;
+    pointer-events: none;
+}
+.photo-frame{
+    position: relative;
+    width: 380px;
+    height: 500px;
+    margin: auto;
+}
+
+.photo-frame img{
+    position: absolute;
+top:70px;
+left:50px;
+width: 180px;
+height:250px;
+
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 18px;
+}
+/* ==========================
+ABOUT
+========================== */
+
+.card{
+    background-image:url("images/118b2af0-b5f9-4750-8b20-965154fca62b.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    border-radius:35px;
+}
+
+.about-content{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.about-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:280px;
+
+    height:360px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    border:10px solid white;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+    transform:rotate(-4deg);
+
+}
+
+.about-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.about-text p{
+
+    line-height:2;
+
+    color:#555;
+
+    font-size:16px;
+
+    margin-bottom:30px;
+
+}
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.info-box{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(5px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.info-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.info-box h3{
+
+    color:#d46892;
+
+    margin-bottom:10px;
+
+}
+
+
+/* ==========================
+PROJECTS
+========================== */
+.project-card{
+
+    background-image:
+        linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.25)),
+        url("images/8f4bef00-63e4-471a-a32d-bc371ae42098.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    min-height:360px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.projects-section{
+
+    text-align:center;
+
+}
+
+.projects-section h2{
+
+    font-family:'Parisienne',cursive;
+    font-size:60px;
+    color:#c63e78;
+    margin-bottom:50px;
+
+}
+
+.project-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+
+}
+
+.project-card{
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:30px;
+
+    padding:35px;
+
+    min-height:360px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    text-align:center;
+
+    border:2px solid #ffd3e5;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px) rotate(-2deg);
+
+    box-shadow:0 18px 35px rgba(212,104,146,.25);
+
+}
+
+.project-card::before{
+
+    content:"🎀";
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:28px;
+
+}
+
+.project-card h3{
+
+    color:#c63e78;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.project-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.project-btn{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:#d46892;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-btn:hover{
+
+    background:#b74c75;
+
+    transform:scale(1.05);
+
+}
+/* ==========================
+CONTACT
+========================== */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 350px;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-item{
+
+    background:rgba(255,255,255,.8);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.contact-item:hover{
+
+    transform:translateX(10px);
+
+}
+
+.contact-item h3{
+
+    color:#d46892;
+
+    margin-bottom:8px;
+
+}
+
+.contact-photo{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.contact-photo img{
+
+    width:280px;
+
+    border-radius:25px;
+
+    border:10px solid white;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#8a6b77;
+
+    font-size:15px;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ==========================
+FLOATING DECORATIONS
+========================== */
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    transition:.4s;
+
+}
+
+@keyframes sparkle{
+
+    0%{
+        filter:brightness(100%);
+    }
+
+    50%{
+        filter:brightness(130%);
+    }
+
+    100%{
+        filter:brightness(100%);
+    }
+
+}
+
+.hero-text span{
+
+    animation:sparkle 2.5s infinite;
+}
+
+.photo-frame{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:1000px){
+
+.hero-card{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.about-content{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+
+.project-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-card{
+
+    min-height:auto;
+
+}
+
+}
+
+.info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.photo-frame{
+
+width:300px;
+
+height:380px;
+
+}
+
+
+
+@media(max-width:700px){
+
+header{
+
+flex-direction:column;
+
+padding:20px;
+
+gap:15px;
+
+}
+
+nav{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+nav a{
+
+margin:8px;
+
+}
+
+.hero-text h1{
+
+font-size:45px;
+
+}
+
+.hero-text span{
+    font-family:'Parisienne', cursive;
+    font-size:88px;
+    color:#C83F78;
+
+    text-shadow:
+        2px 2px 0 rgba(255,255,255,.5),
+        0 0 10px rgba(192,57,116,.4);
+        -webkit-text-stroke:0.5px #ffffff;
+}
+
+.card{
+
+padding:35px;
+
+}
+
+.card h2{
+
+font-size:42px;
+
+}
+
+}
